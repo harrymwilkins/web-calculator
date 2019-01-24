@@ -5,7 +5,7 @@
 
         <link rel="stylesheet" type="text/css" href="styles/index.css"/>
         <link rel="stylesheet" type="text/css" href="styles/light.css" id="js-scheme-sheet"/>
-        <link rel="preload" href="dark.css" as="style"/>
+        <link rel="preload" href="styles/dark.css" as="style"/>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans"> 
@@ -27,9 +27,9 @@
                 <div class="row">
                     <button class="btn btn-device" onclick="updateFormulaBar('(')">(</button>
                     <button class="btn btn-device" onclick="updateFormulaBar(')')">)</button>
-                    <button class="btn btn-device" onclick="updateFormulaBar('^')"><i class="fa fa-superscript" aria-hidden="true"></i></button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('^')">x<sup>y</sup></button>
                     <button class="btn btn-device" onclick="clearFormula()">CE</button>
-                    <button class="btn btn-device" onclick="backspace()">&lt;</button>
+                    <button class="btn btn-device" onclick="backspace()">DEL</button>
                 </div>
                 <div class="row">
                     <button class="btn btn-device" onclick="updateFormulaBar('7')">7</button>
