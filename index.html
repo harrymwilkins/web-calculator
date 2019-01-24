@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>       
+
+        <link rel="stylesheet" type="text/css" href="styles/index.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/light.css" id="js-scheme-sheet"/>
+        <link rel="preload" href="dark.css" as="style"/>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans"> 
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="HandheldFriendly" content="true">
+    </head>
+    <body>
+        <header class="main-header -header-padding">
+            <h1><i class="fa fa-calculator" aria-hidden="true"></i> Calculator</h1>
+            <button class="btn btn-scheme" onclick="updateStyles()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        </header>
+        <section>
+            <header class="formula-bar -header-padding">
+                <h1 id="js-formula-text"></h1>
+                <h2 id="js-result-text"></h2>
+            </header>
+            <div class="button-grid">
+                <div class="row">
+                    <button class="btn btn-device" onclick="updateFormulaBar('(')">(</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar(')')">)</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('^')"><i class="fa fa-superscript" aria-hidden="true"></i></button>
+                    <button class="btn btn-device" onclick="clearFormula()">CE</button>
+                    <button class="btn btn-device" onclick="backspace()">&lt;</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-device" onclick="updateFormulaBar('7')">7</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('8')">8</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('9')">9</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('*')">&times;</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-device" onclick="updateFormulaBar('4')">4</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('5')">5</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('6')">6</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-device" onclick="updateFormulaBar('1')">1</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('2')">2</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('3')">3</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-device" onclick="updateFormulaBar('.')">.</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('0')">0</button>
+                    <button class="btn btn-device" onclick="calculate()">=</button>
+                    <button class="btn btn-device" onclick="updateFormulaBar('/')">&divide;</button>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.4.1/math.min.js" type="text/javascript"></script>
+        <script src="script/calculator-app.js" type="text/Javascript"></script>
+        <script src="script/stylesheet-switch.js" type="text/Javascript"></script>
+    </body>
+</html>

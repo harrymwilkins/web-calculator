@@ -1,0 +1,17 @@
+body{
+    background-color:white;
+}
+
+.main-header{
+    background-color:rgb(66, 75, 202);
+}
+.formula-bar{
+    background-color:#e6e6e6;
+}
+    .formula-bar>#js-result-text{
+        color:rgb(66, 75, 202);
+    }
+.btn-device{
+    background-color:white;
+    color:black;
+}

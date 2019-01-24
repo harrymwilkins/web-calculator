@@ -1,0 +1,17 @@
+body{
+    background-color:#272525;
+}
+.main-header{
+    background-color:#3d3d3d;
+}
+.formula-bar{
+    background-color:#4d4d4d;
+    color:white;
+}
+    .formula-bar>#js-result-text{
+        color:#c9f5d8;
+    }
+.btn-device{
+    background-color:#272525;
+    color:white;
+}

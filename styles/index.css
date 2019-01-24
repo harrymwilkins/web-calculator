@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin:0;
+    transition:all ease-in-out 120ms;
+}
+html{
+    --webkit-text-size-adjust: none;
+}
+body{
+    font-family:'Open Sans', sans-serif;
+}
+h1,
+h2{
+    font-size:220%;
+    font-weight:300;
+}
+.-header-padding{
+    padding:10px 14px;
+}
+.main-header{
+    height:6vh;
+    min-height:50px;
+    display:grid;
+    grid-template-columns: auto 50px;
+    color:white;
+}
+.formula-bar{
+    height:12vh;
+    min-height:85px;
+    text-align:right;
+}
+.btn{
+    outline:none;
+    border:none;
+    font-size:200%;
+    -webkit-appearance: none;
+}
+    .btn:hover{
+        cursor:pointer;
+    }
+        .btn-scheme{
+            background-color:rgba(0,0,0,0);
+            color:white;
+        }
+        .btn-scheme:hover{
+            transform:rotate(45deg);
+            transform-origin: center center;
+        }
+    .btn-device:active{
+        background-color:#4d50f3;
+        color:white;
+    }
+.button-grid{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    height:70vh;
+    max-width:700px;
+    margin: 0 auto;
+}
+    .button-grid>.row{
+        display:flex;
+        justify-content: space-evenly;
+        flex:1;
+    }
+    .button-grid>.row>.btn-device { 
+        flex:1; 
+    }
+@media only screen and (max-width: 798px){
+    h1,
+    h2 {
+        font-size:150%;
+    }
+    .main-header {
+        min-height:40px;
+        height: 4vh;
+    }
+    .formula-bar{
+       height:5vh;
+       min-height:65px;
+    }
+    .btn{
+       font-size:190%;
+    }
+        .btn-device{
+            font-size:165%;
+        }
+        .btn-scheme:hover{
+            transform:none;
+        }
+}
